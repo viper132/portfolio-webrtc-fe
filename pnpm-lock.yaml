@@ -23,6 +23,9 @@ dependencies:
   react-hook-form:
     specifier: ^7.45.2
     version: 7.45.2(react@18.2.0)
+  react-icons:
+    specifier: ^4.10.1
+    version: 4.10.1(react@18.2.0)
   react-router-dom:
     specifier: ^6.14.2
     version: 6.14.2(react-dom@18.2.0)(react@18.2.0)
@@ -52,6 +55,9 @@ devDependencies:
   '@typescript-eslint/parser':
     specifier: ^5.61.0
     version: 5.61.0(eslint@8.44.0)(typescript@5.0.2)
+  '@vitejs/plugin-basic-ssl':
+    specifier: ^1.0.1
+    version: 1.0.1(vite@4.4.0)
   '@vitejs/plugin-react-swc':
     specifier: ^3.3.2
     version: 3.3.2(vite@4.4.0)
@@ -708,6 +714,15 @@ packages:
     dependencies:
       '@typescript-eslint/types': 5.61.0
       eslint-visitor-keys: 3.4.1
+    dev: true
+
+  /@vitejs/plugin-basic-ssl@1.0.1(vite@4.4.0):
+    resolution: {integrity: sha512-pcub+YbFtFhaGRTo1832FQHQSHvMrlb43974e2eS8EKleR3p1cDdkJFPci1UhwkEf1J9Bz+wKBSzqpKp7nNj2A==}
+    engines: {node: '>=14.6.0'}
+    peerDependencies:
+      vite: ^3.0.0 || ^4.0.0
+    dependencies:
+      vite: 4.4.0(@types/node@20.4.2)
     dev: true
 
   /@vitejs/plugin-react-swc@3.3.2(vite@4.4.0):
@@ -1696,6 +1711,14 @@ packages:
     engines: {node: '>=12.22.0'}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /react-icons@4.10.1(react@18.2.0):
+    resolution: {integrity: sha512-/ngzDP/77tlCfqthiiGNZeYFACw85fUjZtLbedmJ5DTlNDIwETxhwBzdOJ21zj4iJdvc0J3y7yOsX3PpxAJzrw==}
+    peerDependencies:
+      react: '*'
     dependencies:
       react: 18.2.0
     dev: false
