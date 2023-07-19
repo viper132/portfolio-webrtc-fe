@@ -1,13 +1,15 @@
 {
+  "homepage": "https://viper132.github.io/portfolio-webrtc-fe/",
   "name": "fe",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
@@ -37,6 +39,7 @@
     "eslint": "^8.44.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.1",
+    "gh-pages": "^5.0.0",
     "postcss": "^8.4.26",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
