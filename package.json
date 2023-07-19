@@ -12,6 +12,7 @@
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
     "framer-motion": "^10.12.22",
+    "jotai": "^2.2.2",
     "peerjs": "^1.4.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -19,6 +20,7 @@
     "react-icons": "^4.10.1",
     "react-router-dom": "^6.14.2",
     "react-toastify": "^9.1.3",
+    "react-tooltip": "^5.18.1",
     "socket.io-client": "^4.7.1",
     "tailwind-merge": "^1.14.0",
     "yup": "^1.2.0"
