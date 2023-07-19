@@ -1,14 +1,11 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react-swc';
-import basicSsl from '@vitejs/plugin-basic-ssl';
 import { fileURLToPath } from 'url';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react(), basicSsl()],
-  server: {
-    https: true,
-  },
+  base: '/portfolio-webrtc-fe/',
+  plugins: [react()],
   resolve: {
     alias: {
       src: fileURLToPath(new URL('./src', import.meta.url)),
