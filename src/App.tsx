@@ -1,5 +1,8 @@
+import routerConfig from '@data/router';
+import { RouterProvider } from 'react-router-dom';
+
 const App = () => {
-  return <div>App</div>;
+  return <RouterProvider router={routerConfig} />;
 };
 
 export default App;
