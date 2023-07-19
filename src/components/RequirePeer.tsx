@@ -11,7 +11,7 @@ interface props {
  */
 const RequirePeer: FC<props> = ({ children }) => {
   const { peer } = usePeer();
-  if (peer) return children;
+  if (peer) return <>{children}</>;
 
   return <Navigate to="/" />;
 };

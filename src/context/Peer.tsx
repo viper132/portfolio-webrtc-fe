@@ -1,4 +1,4 @@
-import { FC, ReactNode, createContext, useState } from 'react';
+import { FC, ReactNode, createContext, useEffect, useState } from 'react';
 import { Peer } from 'peerjs';
 import peerOptions from '@data/peer';
 import stringSpacetoDash from '@utils/stringSpacetoDash';
@@ -20,6 +20,17 @@ interface props {
 const PeerProvider: FC<props> = ({ children }) => {
   const [roomName, setRoomName] = useState<string>();
   const [peer, setPeer] = useState<Peer>();
+
+  useEffect(() => {
+    if (peer) {
+      peer.on('call', () => console.log('call'));
+      peer.on('close', () => console.log('close'));
+      peer.on('connection', () => console.log('connection'));
+      peer.on('disconnected', () => console.log('disconnected'));
+      peer.on('error', (err) => console.log(err));
+      peer.on('open', () => console.log('open'));
+    }
+  }, [peer]);
 
   /**
    * @param peerId empty for random id

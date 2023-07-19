@@ -1,4 +1,4 @@
-import { FC, ReactNode, Ref, forwardRef } from 'react';
+import { ReactNode, forwardRef } from 'react';
 import { twMerge } from 'tailwind-merge';
 import { AiOutlineUser } from 'react-icons/ai';
 import { Variants, motion } from 'framer-motion';
